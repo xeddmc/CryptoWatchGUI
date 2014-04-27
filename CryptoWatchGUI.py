@@ -81,7 +81,7 @@ def printcoins(coinrecord):
     
     for label in sorted(coinrecord.keys()):
         
-        if label.split("/")[0] in watching or label.split("/")[1] in watching:
+        if label.split("/")[0] in watching:
             
             price = float(coinrecord[label][count][1])
             stamp = datetime.strftime(coinrecord[label][count][-1], "%b %d %Y %H:%M:%S")
@@ -125,7 +125,7 @@ def plot_rates(coinrecord):
     gs = gridspec.GridSpec(size1, 2)
     for label in sorted(coinrecord.keys()):
         
-        if label.split("/")[0] in watching or label.split("/")[1] in watching:
+        if label.split("/")[0] in watching:
             
             for i in coinrecord[label]:
                 dates[label][count] = coinrecord[label][count][-1]
