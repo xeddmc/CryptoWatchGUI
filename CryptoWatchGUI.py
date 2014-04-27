@@ -178,8 +178,8 @@ def plot_rates(coinrecord):
 
 if __name__ == "__main__":
     while True:
-        os.system("clear")
-        clear_output()
+        os.system("clear") # change to os.system("cls") for windows
+        clear_output() # for ipython notebook --pylab inline
         
         print "CryptoWatch v1.1"
         print "Watching:"
