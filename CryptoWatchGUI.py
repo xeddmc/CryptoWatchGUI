@@ -112,7 +112,7 @@ def plot_rates(coinrecord):                                         #Function to
             pylab.yticks(rotation=0)
             pylab.autoscale(enable=True, axis='both', tight=None)           #autoscale both axis of graph
             pylab.title(label)                                              #title graph with coinpair                       
-            ax.plot_date(xdates, yrates, color='green', linestyle='-', marker='o', markerfacecolor='white', markersize=5, drawstyle='solid', linewidth=3)                                             #plot graph to prepare for placement into grid on figure
+            ax.plot_date(xdates, yrates, color='green', linestyle='-', marker='o', markerfacecolor='white', markersize=5, drawstyle='solid', linewidth=3)   #plot graph to prepare for placement into grid on figure
             n = n+1                                                         #update grid space for next graph placement
     if count > 1:
         gs.tight_layout(fig, pad=0.4, w_pad=0.5, h_pad=1.0)                 #layout graphs into grid
