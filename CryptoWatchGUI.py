@@ -117,7 +117,7 @@ def plot_rates(coinrecord):                                         #Function to
     if count > 1:
         gs.tight_layout(fig, pad=0.4, w_pad=0.5, h_pad=1.0)                 #layout graphs into grid
         mng = pylab.get_current_fig_manager()                               #get figure to process
-        mng.window.wm_geometry("+1281+0")                                   # place figure/canvas on second monitor
+        mng.window.wm_geometry("+1281+0")                                   #change to place window on appropriate monitor    
         mng.resize(*mng.window.maxsize())                                   #maximize figure
         fig.show()                                                          #show figure of all graphs
     else:
